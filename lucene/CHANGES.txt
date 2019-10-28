@@ -79,6 +79,9 @@ Improvements
 * LUCENE-9006: WordDelimiterGraphFilter's catenateAll token is now ordered before any token parts, like WDF did.
   (David Smiley)
 
+* LUCENE-9002: Skip costly caching clause in LRUQueryCache if it makes the query
+  many times slower. (Guoqiang Jiang)
+
 Optimizations
 
 * LUCENE-8928: When building a kd-tree for dimensions n > 2, compute exact bounds for an inner node every N splits
